@@ -6,7 +6,7 @@
 #    By: crmanzan <crmanzan@student.42barcel>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/14 14:55:40 by crmanzan          #+#    #+#              #
-#    Updated: 2023/09/14 19:04:49 by crmanzan         ###   ########.fr        #
+#    Updated: 2023/09/14 20:10:07 by crmanzan         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ INCL = libft.h
 
 SRCS = ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c \
 		ft_tolower.c ft_toupper.c ft_strlen.c ft_strlcat.c ft_strlcpy.c \
-		ft_strncmp.c ft_atoi.c ft_memset.c \
+		ft_strncmp.c ft_atoi.c ft_memset.c ft_memcpy.c \
 
 OBJ = $(SRCS:.c=.o)
 

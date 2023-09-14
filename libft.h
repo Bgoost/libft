@@ -6,7 +6,7 @@
 /*   By: crmanzan <crmanzan@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 14:58:05 by crmanzan          #+#    #+#             */
-/*   Updated: 2023/09/14 19:29:31 by crmanzan         ###   ########.fr       */
+/*   Updated: 2023/09/14 20:09:57 by crmanzan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define LIBFT_H
 
 void			*ft_memset(char *b, int c, size_t len);
+void			*ft_memcpy(void *dst, const void *src, unsigned int n);
 int				ft_isalnum(int c);
 int				ft_isalpha(int c);
 int				ft_isascii(int c);
