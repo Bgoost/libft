@@ -6,13 +6,19 @@
 /*   By: crmanzan <crmanzan@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 16:10:45 by crmanzan          #+#    #+#             */
-/*   Updated: 2023/09/15 16:12:24 by crmanzan         ###   ########.fr       */
+/*   Updated: 2023/09/15 17:31:36 by crmanzan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_bzero(void *s, unsigned int n)
 {
-	if (n <= 0)
-		return s;
+	unsigned char	*c;
 
+	c = (unsigned char *)s;
+	while (n != 0)
+	{
+		*c = '\0';
+		c++;
+		n--;
+	}
 }
