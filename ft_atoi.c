@@ -6,7 +6,7 @@
 /*   By: crmanzan <crmanzan@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/29 18:53:14 by crmanzan          #+#    #+#             */
-/*   Updated: 2023/09/14 18:39:11 by crmanzan         ###   ########.fr       */
+/*   Updated: 2023/09/15 16:03:26 by crmanzan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,12 +46,3 @@ int	ft_atoi(char *str)
 	nb *= sign;
 	return (nb);
 }
-/*
-int main(int argc, char *argv[])
-{
-	if(argc == 2)
-	{
-    		printf("%d", ft_atoi(&argv[1][0]));
-}
-			return 0;
-}*/

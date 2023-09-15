@@ -6,9 +6,12 @@
 /*   By: crmanzan <crmanzan@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 19:45:53 by crmanzan          #+#    #+#             */
-/*   Updated: 2023/09/14 20:17:52 by crmanzan         ###   ########.fr       */
+/*   Updated: 2023/09/15 16:10:12 by crmanzan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <string.h>
+#include <stdio.h>
 
 void	*ft_memcpy(void *dst, const void *src, unsigned int n)
 {
@@ -28,3 +31,30 @@ void	*ft_memcpy(void *dst, const void *src, unsigned int n)
 	}
 	return (dst);
 }
+/*
+int main()
+{
+	char str1[] = "Hsfdfdsola"; // Array of size 100
+	char str2[] = "Adios"; // Array of size 100
+	char dst[] = "aa"; // Array of size 100
+    char src[] = "bbb"; // Array of size 5
+
+    puts("str1 before memmove original ");
+    puts(str1);
+
+   // Copies contents of str2 to sr1
+    memmove(str1, str2, 2);
+    puts("str1 after memmove original");
+    puts(str1);
+
+    puts("\nstr3 before memmove ");
+    puts(dst);
+
+    // Copies contents of str2 to sr1
+    ft_memcpy(dst, src, 2);
+    puts("str3 after memmove");
+	puts(dst);
+
+    return 0;
+}
+*/
