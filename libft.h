@@ -6,7 +6,7 @@
 /*   By: crmanzan <crmanzan@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 14:58:05 by crmanzan          #+#    #+#             */
-/*   Updated: 2023/09/15 17:43:37 by crmanzan         ###   ########.fr       */
+/*   Updated: 2023/09/15 18:10:10 by crmanzan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,8 @@
 //void			*ft_memchr(const void *s, int c, unsigned int n);
 //void			*ft_memmove(void *dst, const void *src, unsigned int n);
 //void			ft_bzero(void *s, unsigned int n);
-char			*ft_strchr(const char *s, int c);
+//char			*ft_strchr(const char *s, int c);
+char			*ft_strrchr(const char *s, int c);
 int				ft_isalnum(int c);
 //int				ft_isalpha(int c);
 //int				ft_isascii(int c);
