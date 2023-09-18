@@ -6,13 +6,15 @@
 /*   By: crmanzan <crmanzan@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 12:23:51 by crmanzan          #+#    #+#             */
-/*   Updated: 2023/09/14 15:32:52 by crmanzan         ###   ########.fr       */
+/*   Updated: 2023/09/18 17:56:40 by crmanzan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(const char *s)
+#include <stdlib.h>
+
+size_t	ft_strlen(const char *s)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while (s[i] != '\0')

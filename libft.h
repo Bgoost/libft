@@ -6,7 +6,7 @@
 /*   By: crmanzan <crmanzan@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 14:58:05 by crmanzan          #+#    #+#             */
-/*   Updated: 2023/09/18 15:57:43 by crmanzan         ###   ########.fr       */
+/*   Updated: 2023/09/18 18:22:36 by crmanzan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,10 @@
 //char	*ft_strchr(const char *s, int c);
 //char	*ft_strrchr(const char *s, int c);
 //char	*ft_strnstr(const char *h, const char *n, size_t len);
-char	*ft_substr(char const *s, unsigned int start, size_t len);
-char	*ft_strjoin(char const *s1, char const *s2);
+//char	*ft_substr(char const *s, unsigned int start, size_t len);
+//char	*ft_strjoin(char const *s1, char const *s2);
 //char	*ft_strdup(const char *s1);
+char	*ft_strtrim(char const *s1, char const *set);
 //int		ft_isalnum(int c);
 //int		ft_isalpha(int c);
 //int		ft_isascii(int c);
@@ -34,10 +35,10 @@ char	*ft_strjoin(char const *s1, char const *s2);
 //int		ft_isprint(int c);
 //int		ft_tolower(int c);
 //int		ft_toupper(int c);
-int		ft_strlen(const char *s);
 //int		ft_strncmp(const char *s1, const char *s2, size_t n);
 //int		ft_memcmp(const char *s1, const char *s2, size_t n);
 //int		ft_atoi(char *str);
+size_t	ft_strlen(const char *s);
 //size_t	ft_strlcat(char *dest, char *src, size_t size);
 //size_t	ft_strlcpy(char *dest, char *src, size_t size);
 
