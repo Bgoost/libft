@@ -6,7 +6,7 @@
 /*   By: crmanzan <crmanzan@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 14:58:05 by crmanzan          #+#    #+#             */
-/*   Updated: 2023/09/16 18:14:47 by crmanzan         ###   ########.fr       */
+/*   Updated: 2023/09/18 15:57:43 by crmanzan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@
 //char	*ft_strrchr(const char *s, int c);
 //char	*ft_strnstr(const char *h, const char *n, size_t len);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_strjoin(char const *s1, char const *s2);
 //char	*ft_strdup(const char *s1);
 //int		ft_isalnum(int c);
 //int		ft_isalpha(int c);
