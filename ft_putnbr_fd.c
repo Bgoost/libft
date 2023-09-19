@@ -6,7 +6,7 @@
 /*   By: crmanzan <crmanzan@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 16:19:26 by crmanzan          #+#    #+#             */
-/*   Updated: 2023/09/19 16:25:36 by crmanzan         ###   ########.fr       */
+/*   Updated: 2023/09/19 16:36:12 by crmanzan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void	ft_putnbr_ft(int n, int fd)
 	if (n >= 10)
 	{
 		ft_putnbr_fd(n / 10, fd);
-		ft_putchar_fd(n % 10 + '0', fd);
+		ft_putnbr_fd(n % 10 + '0', fd);
 	}
 	if (n < 10)
 	{
