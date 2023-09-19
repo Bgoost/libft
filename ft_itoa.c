@@ -6,7 +6,7 @@
 /*   By: crmanzan <crmanzan@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 14:10:15 by crmanzan          #+#    #+#             */
-/*   Updated: 2023/09/19 16:16:36 by crmanzan         ###   ########.fr       */
+/*   Updated: 2023/09/19 16:50:10 by crmanzan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <stdlib.h>
 #include "libft.h"
 
-int	ft_len(int n)
+static int	ft_len(int n)
 {
 	int	i;
 
