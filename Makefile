@@ -6,7 +6,7 @@
 #    By: crmanzan <crmanzan@student.42barcel>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/14 14:55:40 by crmanzan          #+#    #+#              #
-#    Updated: 2023/09/19 15:54:57 by crmanzan         ###   ########.fr        #
+#    Updated: 2023/09/19 16:29:32 by crmanzan         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,18 +16,21 @@ CFLAGS = -Wall -Wextra -Werror -I $(INCL)
 INCL = libft.h
 
 SRCS = 	ft_isalnum.c \
-		ft_itoa.c \
+		ft_putchar_fd.c \
+		ft_putstr_fd.c \
+		ft_putnbr_fd.c \
 		ft_strlen.c \
 #		ft_memset.c \
+		ft_itoa.c \
 		ft_split.c \
+ 		ft_calloc.c \
+		ft_bzero.c \
 		ft_strtrim.c \
 		ft_strlcpy.c \
 		ft_substr.c \
 		ft_strjoin.c \
 		ft_strdup.c \
 		ft_strnstr.c \
- 		ft_calloc.c \
-		ft_bzero.c \
 		ft_memcmp.c \
 		ft_strrchr.c \
 		ft_strchr.c \
