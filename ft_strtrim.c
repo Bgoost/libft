@@ -6,7 +6,7 @@
 /*   By: crmanzan <crmanzan@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 17:58:44 by crmanzan          #+#    #+#             */
-/*   Updated: 2023/09/18 18:43:52 by crmanzan         ###   ########.fr       */
+/*   Updated: 2023/09/19 13:46:29 by crmanzan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,12 @@
 #include <stdio.h>
 #include "libft.h"
 
-int		is_in(char const *set, char c)
+int	is_in(char const *set, char c)
 {
 	int	i;
+	int	n;
 
+	n = ft_strlen(set);
 	i = 0;
 	while (set[i] != '\0')
 	{
@@ -29,31 +31,40 @@ int		is_in(char const *set, char c)
 	return (0);
 }
 
+char	*ft_empty(void)
+{
+	char	*str;
+
+	str = malloc(sizeof(char));
+	if (!str)
+		return (0);
+	ft_strlcpy(str, "", 1);
+	return (str);
+}
+
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	char	*s2;
 	size_t	i;
-	size_t	n;
+	size_t	end;
+	size_t	len;
 
-	s2 = (char *)malloc(ft_strlen(s1 + 1) * sizeof(char));
-	i = 0;
-	n = 0;
-	if(!s2)
+	if (!s1 || !set)
 		return (0);
-	while(s1[i] != '\0')
-	{
-		if(is_in(set, s1[i]))
-			i++;
-		else
-		{
-			s2[n] = s1[i];
-			i++;
-			n++;
-		}
-	}
-	s2[i] = '\0';
+	i = 0;
+	len = ft_strlen(s1);
+	end = len - 1;
+	while (is_in(set, s1[i]))
+		i++;
+	if (i == len)
+		return (ft_empty());
+	while (is_in(set, s1[end]))
+		end--;
+	s2 = (char *)malloc((end - i + 2) * sizeof(char));
+	if (!s2)
+		return (0);
+	ft_strlcpy(s2, (char *)(s1 + i), end - i + 2);
 	return (s2);
-
 }
 /*
 int main()
