@@ -6,7 +6,7 @@
 /*   By: crmanzan <crmanzan@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 14:00:15 by crmanzan          #+#    #+#             */
-/*   Updated: 2023/09/20 18:56:40 by crmanzan         ###   ########.fr       */
+/*   Updated: 2023/09/20 20:49:40 by crmanzan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,28 +20,30 @@ size_t	word_count(const char *s, char c)
 
 	i = 0;
 	words = 0;
-	while(s[i])
+	while (s[i])
 	{
 		if (s[i] != c && (i == 0 || s[i - 1] == c))
 			words++;
 		i++;
 	}
-
 	return (words);
 }
 
-void	free_words(char	***words, size_t word_count)
+void	free_words(char	**words, size_t word_count)
 {
 	size_t	i;
 
 	i = 0;
+	if(!words)
+		return;	
 	while (i < word_count)
 	{
-		free((*words)[i]);
+		free(words[i]);
 		i++;
 	}
-	free(*words);
-	words = 0;
+
+	free(words);
+	words = NULL;
 }
 
 void	copy_words(char const *s, char c, char ***words, size_t word_count)
@@ -63,20 +65,22 @@ void	copy_words(char const *s, char c, char ***words, size_t word_count)
 		(*words)[i] = ft_substr(s, start, j - start);
 		if (!(*words)[i])
 		{
-			free_words(words, word_count);
-			return ;
+			free_words(*words, i);
+			*words = NULL;
+			return;
 		}
 		i++;
 	}
 	(*words)[i] = 0;
 }
 
-
 char	**ft_split(char const *s, char c)
 {
 	size_t	word;
 	char	**split;
 
+	if (!s)
+		return (0);
 	word = word_count(s, c);
 	split = malloc((word + 1) * sizeof(char *));
 	if (!split)

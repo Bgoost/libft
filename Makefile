@@ -6,7 +6,7 @@
 #    By: crmanzan <crmanzan@student.42barcel>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/14 14:55:40 by crmanzan          #+#    #+#              #
-#    Updated: 2023/09/20 18:35:01 by crmanzan         ###   ########.fr        #
+#    Updated: 2023/09/20 20:19:54 by crmanzan         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,8 +17,10 @@ INCL = libft.h
 
 SRCS = 	ft_isalnum.c \
 		ft_split.c \
+		ft_strdup.c \
+		ft_substr.c \
 		ft_strlen.c \
-#		ft_memset.c \
+		ft_memset.c \
 		ft_putstr_fd.c \
 		ft_putchar_fd.c \
 		ft_putendl_fd.c \
@@ -31,9 +33,7 @@ SRCS = 	ft_isalnum.c \
 		ft_bzero.c \
 		ft_strtrim.c \
 		ft_strlcpy.c \
-		ft_substr.c \
 		ft_strjoin.c \
-		ft_strdup.c \
 		ft_strnstr.c \
 		ft_memcmp.c \
 		ft_strrchr.c \
