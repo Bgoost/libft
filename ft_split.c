@@ -6,7 +6,7 @@
 /*   By: crmanzan <crmanzan@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 14:00:15 by crmanzan          #+#    #+#             */
-/*   Updated: 2023/09/20 20:49:40 by crmanzan         ###   ########.fr       */
+/*   Updated: 2023/09/20 21:21:22 by crmanzan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,24 +29,23 @@ size_t	word_count(const char *s, char c)
 	return (words);
 }
 
-void	free_words(char	**words, size_t word_count)
+void	free_words(char	**words)
 {
 	size_t	i;
 
 	i = 0;
-	if(!words)
-		return;	
-	while (i < word_count)
+	if (!words)
+		return ;
+	while (words[i])
 	{
 		free(words[i]);
 		i++;
 	}
-
 	free(words);
-	words = NULL;
+	words = 0;
 }
 
-void	copy_words(char const *s, char c, char ***words, size_t word_count)
+char	**copy_words(char const *s, char c, char **words, size_t word_count)
 {
 	size_t	i;
 	size_t	j;
@@ -62,16 +61,17 @@ void	copy_words(char const *s, char c, char ***words, size_t word_count)
 		start = j;
 		while (s[j] && s[j] != c)
 			j++;
-		(*words)[i] = ft_substr(s, start, j - start);
-		if (!(*words)[i])
+		words[i] = ft_substr(s, start, j - start);
+		if (!words[i])
 		{
-			free_words(*words, i);
-			*words = NULL;
-			return;
+			free_words(words);
+			words = NULL;
+			return (0);
 		}
 		i++;
 	}
-	(*words)[i] = 0;
+	words[i] = NULL;
+	return (words);
 }
 
 char	**ft_split(char const *s, char c)
@@ -85,6 +85,23 @@ char	**ft_split(char const *s, char c)
 	split = malloc((word + 1) * sizeof(char *));
 	if (!split)
 		return (0);
-	copy_words(s, c, &split, word);
+	split = copy_words(s, c, split, word);
 	return (split);
 }
+/*
+#include <stdio.h>
+int main()
+{
+	char **split;
+	char *str = "Hola buenas tardes como estammos";
+	char c = ' ';
+	int i;
+
+	split = ft_split(str, c);
+
+	while (split[i])
+	{
+		printf("%s\n", split[i++]);
+	}
+
+}*/
