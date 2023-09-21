@@ -6,7 +6,7 @@
 /*   By: crmanzan <crmanzan@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 16:27:03 by crmanzan          #+#    #+#             */
-/*   Updated: 2023/09/20 17:13:51 by crmanzan         ###   ########.fr       */
+/*   Updated: 2023/09/21 15:04:12 by crmanzan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,10 @@ void	ft_putstr_fd(char *str, int fd)
 		i++;
 	}
 }
+/*
+int	main()
+{
+	char	*str = "hola que tal";
+	ft_putstr_fd(str, 1);
+}
+*/

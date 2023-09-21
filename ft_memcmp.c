@@ -6,11 +6,12 @@
 /*   By: crmanzan <crmanzan@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 18:32:36 by crmanzan          #+#    #+#             */
-/*   Updated: 2023/09/16 15:56:35 by crmanzan         ###   ########.fr       */
+/*   Updated: 2023/09/21 15:24:07 by crmanzan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
+#include <stdio.h>
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
@@ -31,3 +32,10 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 		return (a[i] - b[i]);
 	return (0);
 }
+/*
+int main()
+{
+	printf("memcmp 1: %i\n", ft_memcmp("ass", "ass", 3));
+	printf("memcmp 2: %i\n", ft_memcmp("hola", "adios", 4));
+	printf("memcmp 3: %i\n", ft_memcmp("asa", "ass", 2));
+}*/

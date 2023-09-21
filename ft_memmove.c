@@ -6,7 +6,7 @@
 /*   By: crmanzan <crmanzan@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 10:56:30 by crmanzan          #+#    #+#             */
-/*   Updated: 2023/09/16 15:24:24 by crmanzan         ###   ########.fr       */
+/*   Updated: 2023/09/21 15:19:16 by crmanzan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,16 +44,16 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 /*
 int main()
 {
-	char str1[] = "Hsfdfdsola"; // Array of size 100
-	char str2[] = "Adios"; // Array of size 100
-	char dst[] = "aaaaaa"; // Array of size 100
-    char src[] = "bbb"; // Array of size 5
+	char str1[] = "aaaaaa";
+	char str2[] = "bbb"; 
+	char dst[] = "aaaaaa";
+    char src[] = "bbb"; 
 
     puts("str1 before memmove original ");
     puts(str1);
 
    // Copies contents of str2 to sr1 
-    memmove(str1, str2, 2);
+    memmove(str1, str2, 5);
     puts("str1 after memmove original");
     puts(str1);
 	
@@ -61,7 +61,7 @@ int main()
     puts(dst);
 
     // Copies contents of str2 to sr1
-    ft_memmove(dst, src, 2);
+    ft_memmove(dst, src, 5);
     puts("str3 after memmove");
 	puts(dst);
 

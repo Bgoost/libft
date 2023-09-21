@@ -6,7 +6,7 @@
 /*   By: crmanzan <crmanzan@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 16:19:26 by crmanzan          #+#    #+#             */
-/*   Updated: 2023/09/19 16:52:51 by crmanzan         ###   ########.fr       */
+/*   Updated: 2023/09/21 15:09:25 by crmanzan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,3 +35,10 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putchar_fd(n % 10 + '0', fd);
 	}
 }
+/*
+int	main()
+{
+	ft_putnbr_fd(1, 1);
+	ft_putnbr_fd(-2, 1);
+	return (0);
+}*/

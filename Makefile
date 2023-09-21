@@ -6,7 +6,7 @@
 #    By: crmanzan <crmanzan@student.42barcel>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/14 14:55:40 by crmanzan          #+#    #+#              #
-#    Updated: 2023/09/20 21:29:59 by crmanzan         ###   ########.fr        #
+#    Updated: 2023/09/21 15:50:21 by crmanzan         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -57,7 +57,7 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	ar rcs $(NAME) $(OBJ)
 
-%.o : %.c Makefile
+%.o : %.c Makefile $(INCL)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:

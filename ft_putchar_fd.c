@@ -6,7 +6,7 @@
 /*   By: crmanzan <crmanzan@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 16:17:05 by crmanzan          #+#    #+#             */
-/*   Updated: 2023/09/19 16:19:01 by crmanzan         ###   ########.fr       */
+/*   Updated: 2023/09/21 15:07:45 by crmanzan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,3 +16,10 @@ void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);
 }
+
+/*
+int	main()
+{
+	ft_putchar_fd('a', 1);
+	return (0);
+}*/
